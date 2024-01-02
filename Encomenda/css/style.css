@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial Bold", Arial;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar ul{
+    display: inline-flex;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    padding-right: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.about{
+    display: flex;
+}
+.about button{
+    border: 3px;
+    border-color: #d3572e;
+    border-style: solid;
+    height: 35px;
+    background-color: #ff6633;
+    border-radius: 20px;
+    position: relative;
+    left: 60px;
+    width: 150px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.about button:active{
+    box-shadow: 0 1px #666;
+    transform: translateY(1px)
+}
+.search{
+    width: 35%;
+    position: absolute;
+    left: 30.5%;
+    top: 55.5%;
+}
+.search input{
+    width: 44%;
+    height: 19px;
+    position: absolute;
+    left: 3.5%;
+    top: 55.5%;
+}
+#txt-src{
+    padding: 3px 10px;
+}
+.search-location{
+    width: 35%;
+    position: absolute;
+    left: 48.5%;
+    top: 55.5%;
+}
+.search-location input{
+    height: 19px;
+}
+#txt-lct{
+    padding: 3px 10px;
+}
+.button-search{
+    position: absolute;
+    position: absolute;
+    top: -12%;
+    left: 20.5%;
+}
+.button-search button{
+    border: 3px;
+    border-color: #d3572e;
+    border-style: solid;
+    height: 35px;
+    background-color: #ff6633;
+    border-radius: 20px;
+    position: relative;
+    left: 60px;
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.button-search button:active{
+    box-shadow: 0 1px #666;
+    transform: translateY(1px)
+}
+.main h1{
+    width: 23%;
+    position: absolute;
+    left: 39%;
+    top: 35%;
+    font-weight: 700;
+    font-size: 35px;
+}
+.main h2{
+    width: 40%;
+    position: absolute;
+    left: 37.5%;
+    top: 39%;
+    font-size: 17px;
+    color: gray;
+    font-weight: 100;
+}
+.main h3{
+    width: 70%;
+    position: absolute;
+    left: -37.5%;
+    top: 130%;
+    font-size: 15px;
+    color: gray;
+    font-weight: 100;
+}

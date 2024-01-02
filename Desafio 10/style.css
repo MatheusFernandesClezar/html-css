@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+:root{
+    --cor01: #7fe1a8;
+    --cor02: #2c9758;
+    --cor03: #02210e;
+    --cor04: rgb(11, 56, 30) ;
+    --cor05: #e6e6c1;
+}
+html{
+    background-color: var(--cor05);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background: linear-gradient(to bottom, #2c9758, rgb(11, 56, 30) );
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+header h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 10px #000000c4;
+}
+header h2{
+    margin: auto;
+    width: 39vw;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: 100;
+    text-shadow: 2px 2px 10px #000000;
+}
+nav{
+    display: flex;
+    text-align: left;
+}
+nav ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    list-style: none;
+    padding: 13px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #9ee0ba;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    background-color: #02210e;
+    transition: 0.5s;
+}
+div.historia{
+    box-shadow: 8px 10px 15px 12px #00000040;
+    padding-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    text-align: center;
+}
+div.historia>h1, div.historia>h2{
+    margin-left: 20px;
+    padding-left: 10px;
+    text-align: left;
+    font-family: 'idroid';
+}
+div.historia>h1{
+    color: #043519;
+}
+div.historia>h2{
+    color: #0e5b2e;
+    background: linear-gradient(to right, #2c975891, rgba(255, 255, 255, 0.404));
+}
+.highlighthistoria>p{
+    color: #2c975891;
+}
+div.historia>p{
+    text-align: justify;
+    padding: 25px;
+    font-size: 1.5em;
+    text-indent: 50px;
+    font-family: sans-serif;
+}
+span.highlight{
+    color: #053619;
+    font-weight: bold;
+    padding: 1px 8px 3px 8px;
+    background-color: #2c975891;
+    cursor: pointer;
+}
+span.highlight a{
+    text-decoration: none;
+}
+span.symbol{
+    color: white;
+}
+div.historia>img{
+    width: 77vw;
+}
+div.mascote{
+    box-shadow: 8px 32px 15px 12px #00000040;
+    padding-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+div.mascote h2{
+    margin-left: 20px;
+    padding-left: 10px;
+    text-align: left;
+    font-family: 'idroid';
+    color: #0e5b2e;
+    background: linear-gradient(to right, #2c975891, rgba(255, 255, 255, 0.404));
+}
+div.mascote p{
+    text-align: justify;
+    padding: 25px;
+    font-size: 1.4em;
+    text-indent: 50px;
+    font-family: sans-serif;
+}
+div.mascote img{
+    width: 76vw;
+}
+div.video{
+    background-color: #043d1d;
+    padding: 20px;
+}
+div.video iframe{
+    width: 60vw;
+    height: 70vh;
+}
+div.aprender{
+    margin: 20px;
+    background-color: #7fe1a8;
+    border-radius: 20px;
+}
+div.aprender h2{
+    background-color: #043d1d;
+    color: white;
+    margin: 0px;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #043d1d, #043d1d);
+    border-radius: 10px 10px 0px 0px;
+    padding: 12px;
+}
+.versoes{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    font-size: 1.3em;
+}
+.versoes li a{
+    cursor: default;
+}
+.versoes li a abbr{
+    cursor: pointer;
+}
+@media (max-width: 880px){
+    div.historia>p, div.mascote p{
+        font-size: 1em;
+    }
+    div.historia, div.mascote{
+        margin: 1%;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 13px 0px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    header h2{
+        font-size: 1em;
+        width: 90vw;
+    }
+    nav{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    span.highlight{
+        padding: 1px 8px 0px 8px;
+    }
+    div.video iframe{
+        width: 75vw;
+        height: 35vh;
+    }
+    .versoes{
+        font-size: 0.9em;
+    }
+    .versoes li a abbr{
+        text-decoration: none;
+    }
+}
