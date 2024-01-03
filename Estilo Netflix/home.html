@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mathflix</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="left-header">
+            <img src="img/Logo.PNG" alt="" id="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Filmes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Séries</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Maatthhzz" target="_blank"> Contato </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right-header">
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Busca" id="minhabusca">
+                </div>
+            </div>
+
+            <img src="img/User.PNG" alt="" id="user">
+            <img src="img/Settings.PNG" alt="" id="settings">
+        </div>
+
+
+    </header>
+    <script>
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+            search.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
