@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inder", Sans-serif;
+}
+.Container{
+    height: 100%;
+    width: 100%;
+    background-image: url(img/4.png);
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content:center ;
+    width: 100%;
+    background: rgba(27, 25, 25, 0.75);
+    height:80px;
+}
+nav{
+    position: relative;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    transition: 0.5s;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Inder", Sans-serif;
+    font-size: 25px;
+    color: #ffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.5));
+}
+nav li:hover{
+    transform: scale(1.05);
+}
+.logo{
+    position: relative;
+    width: 200px;
+    top: 4px;
+}
+.nav{
+    display: flex;
+}
+.Me{
+    position: relative;
+    top: 235px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vw;
+}
+.profile{
+    position: relative;
+    width: 22vw;
+    height: 22vw;
+    left: 15%;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+}
+.profile:hover{
+    transform: scale(1.02);
+}
+.profile img{
+    position: relative;
+    top: 9.5%;
+    left: 9.5%;
+    width: 18vw;
+    border-radius: 45px;
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.profile img{
+    position: relative;
+    top: 4.5%;
+    left: 14.5%;
+    width: 16vw;
+    border-radius: 45px;
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.name{
+    position: relative;
+    width: 22vw;
+    height: 2.2vw;
+    left: 15%;
+    top: 15px;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.name:hover{
+    transform: scale(1.02);
+}
+.name p{
+    font-size: 1.2vw;
+    color: white;
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.5));
+}
+.AboutMe{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 40vw;
+    height: 24.2vw;
+    left: 50%;
+    background: #1B1919;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.AboutMe p{
+    margin-top: 35px;
+    margin-right: 20px;
+    margin-left: 30px;
+    font-size: 1.3vw;
+    color: #fff;
+}
+.AboutMe h1{
+    position: absolute;
+    bottom: 102%;
+    font-size: 3vw;
+}
+.Skills{
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.HtmlCssJava{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+.HtmlCssJava img{
+    width: 85%;
+    padding-left: 8%;
+    padding-top: 6%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5));
+}
+.html:hover, .css:hover, .javascript:hover, .project1:hover, .project2:hover, .project3:hover{
+    transform: scale(1.05);
+}
+.html{
+    width: 14vw;
+    height: 14vw;
+    left: 49px;
+    top: 203px;
+    background: #1B1919;
+    border-radius: 25px;
+    margin: 30px;
+    transition: 0.5s;
+}
+.css{
+    width: 14vw;
+    height: 14vw;
+    left: 49px;
+    top: 203px;
+    background: #1B1919;
+    border-radius: 25px;
+    margin: 30px;
+    transition: 0.5s;
+}
+.javascript{
+    width: 14vw;
+    height: 14vw;
+    left: 49px;
+    top: 203px;
+    background: #1B1919;
+    border-radius: 25px;
+    margin: 30px;
+    transition: 0.5s;
+}
+.SkillsDescription{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    height: 24.2vw;
+    background: #1B1919;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.SkillsDescription h1{
+    position: absolute;
+    bottom: 102%;
+    font-size: 3vw;
+}
+.Projects{
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.project1{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.project2{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.PROJETOS{
+    position: relative;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PROJETOS h1{
+    position: absolute;
+    bottom: 105%;
+}
+.project3{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+}
