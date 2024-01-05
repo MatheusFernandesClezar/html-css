@@ -1,0 +1,132 @@
+body {
+    width: 100%;
+    height: 1928px;
+    margin: 0 auto;
+}
+main {
+    margin: 0 auto;
+    width:  100%;
+    height: 63px;
+    position: relative;
+}
+main2 {
+    margin: 0 auto;
+    width: 100%;
+    height: 63px;
+    position: relative;
+    display: block;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #252323;
+    height: 63px;
+}
+.logo{
+    float: left;
+    padding: 0px;
+    padding-left: 82px;
+}
+.logo2{
+    float: left;
+    width: 100px;
+    padding-left: 325px;
+}
+
+.redes-sociais ul{
+    padding-left: 0px;
+}
+.redes-sociais ul li {
+    padding-inline-start: none;
+    margin-left: 27px;
+    display: inline-block;
+}
+.redes-sociais {
+    width: 31%;
+    float: right;
+}
+.menu {
+    width: 100%;
+    float: left;
+    height: 60px;
+    border-bottom: 3px solid rgb(170, 169, 169);
+}
+.menu ul {
+    padding-left: 16.5%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 42px;
+}
+.menu li:hover{
+    border-bottom: 3px solid #001ec6;
+    height: 40px;
+}
+.menu li {
+    display: inline-block;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    height: 40px;
+    
+}
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: gray;
+}
+.menu a:hover {
+    color: #000000;
+}
+.busca {
+    float:right;
+    width: 24.5%;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+.busca {
+    text-align: start;
+    width: 193px;
+    height: 32px;
+    padding: 10px;
+    padding-right: 30px;
+    border: 2px solid #d6d6d6;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    position: relative;
+    right: 19%;
+    top: -103%;
+}
+.slider-principal {
+    height: 632.469px;
+    overflow: hidden;
+}
+button.slick-prev{
+    background-image: url(../img/anterior.png);
+    z-index: 9;
+    position: absolute;
+    left: 247px;
+    width: 25px;
+    height: 51px;
+    bottom: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+button.slick-next{
+    background-image: url(../img/proximo.png);
+    z-index: 9;
+    position:absolute;
+    right: 247px;
+    width: 25px;
+    height: 51px;
+    bottom: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+input::placeholder{
+    color: white;
+}
+
