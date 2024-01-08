@@ -1,0 +1,340 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamo jogar um jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <img src="img/logo1.png" >
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li><a >Home</a></li>
+                    <li><a >Game List</a></li>
+                    <li><a >Request Game</a></li>
+                </ul>
+            </nav>
+            <img id="menu-icon" src="img/menu.PNG" class="menu-icon" onclick="myFunction()">
+        </div>
+        <div class="media" id="media">
+            <video height="100%" width="100%" id="myvideo" autoplay muted>
+                <source src="witcher_Trim.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="row" id="row">
+            <div class="col-1">
+                 <img src="img/witcher.png" class="witcher" onclick="showWitcher()">
+            </div>
+            <div class="col-2">
+                <img src="img/apex.PNG" class="apex" onclick="showApex()">
+            </div>
+            <div class="col-3">
+                <img src="img/rocket.png" class="rocket" onclick="showRocket()">
+            </div>
+        </div>
+    <div class="row-info1" id="row1">
+         <div class="witcherInfo">
+            <div class="witcherIMG">
+                <img src="img/witcher-info.png" class="witcherIMG">
+           </div>
+        </div>
+        <button type="button" id="backWitcher" onclick="goBackW()" > < 
+            </button>
+        <div class="witcherLettering">
+            <img  src="img/witcher-lettering.png" class="witcherLettering">
+        </div>
+        <video controls id="witcherTrailer" loop  >
+            <source src="https://cdn.akamai.steamstatic.com/steam/apps/256658589/movie480.webm?t=1528288687" type="video/webm">
+        </video>
+     <div class="witcherText">
+        <h3>
+            As war rages on throughout the Northern Realms, you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon that can alter the shape of the world.<br>
+            The Witcher: Wild Hunt is a story-driven open world RPG set in a visually stunning fantasy universe full of meaningful choices and impactful consequences. In The Witcher, you play as professional monster hunter Geralt of Rivia tasked with finding a child of prophecy in a vast open world rich with merchant cities, pirate islands, dangerous mountain passes, and forgotten caverns to explore
+        </h3>
+     </div>
+    </div>
+    <div class="row-info2" id="row2">
+        <div class="apexInfo">
+            <div class="apexIMG">
+                <img src="img/apex-info.png" class="apexIMG">
+           </div>
+        </div>
+           <button type="button" id="backApex" onclick="goBackA()" > < 
+               </button>
+           <div class="apexLettering">
+            <img  src="img/apex-lettering.PNG" class="apexLettering">
+        </div>
+        <video controls id="apexTrailer" loop>
+            <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256886875/movie480_vp9.webm?t=1652720158" type="video/webm" >
+        </video>
+        <div class="apexText">
+            <h3>
+                Apex Legends is the award-winning, free-to-play Hero Shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities, and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.<br>
+                Master an ever-growing roster of diverse Legends, deep-tactical squad play, and bold, new innovations that go beyond the Battle Royale experience — all within a rugged world where anything goes. Welcome to the next evolution of Hero Shooter.
+            </h3>
+        </div>
+    </div>
+    <div class="row-info3" id="row3">
+        <div class="rocketInfo">
+            <div class="rocketIMG">
+                <img src="img/rocket-info.png" width="650px" class="rocketIMG">
+           </div>
+        </div> 
+        <button type="button" id="backRocket" onclick="goBackR()" > < 
+         </button>
+            <div class="rocketLettering">
+                <img  src="img/rocket-lettering.png" class="rocketLettering">
+            </div>
+            <video controls id="rocketTrailer" loop>
+                <source src="https://cdn.akamai.steamstatic.com/steam/apps/256904802/movie480_vp9.webm?t=1662568121" type="video/webm" >
+            </video>
+            <div class="rocketText">
+                <h3>
+                    Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition.<br>
+                    Hit the field by yourself or with friends in 1v1, 2v2, and 3v3 Online Modes, or enjoy Extra Modes like Rumble, Snow Day, or Hoops. Unlock items in Rocket Pass, climb the Competitive Ranks, compete in Competitive Tournaments, complete Challenges, enjoy cross-platform progression and more! The field is waiting. Take your shot!
+                </h3>
+            </div>
+  </div>
+</div>
+<script>
+    var row1 = document.getElementById("row1");
+    var row2 = document.getElementById("row2");
+    var row3 = document.getElementById("row3");
+    var row = document.getElementById("row");
+    var media = document.getElementById("media");
+    var navbar = document.getElementById("navbar");
+    var vid = document.getElementById("witcherTrailer");
+    var vid2 = document.getElementById("apexTrailer");
+    var vid3 = document.getElementById("rocketTrailer");
+
+
+    row1.style.display = "none";
+    row2.style.display = "none";
+    row3.style.display = "none";
+    media.style.display = "flex";
+    row.style.display = "flex"
+    navbar.style.display = "flex"
+
+    function showWitcher(){
+
+        if(row1.style.display == "none")
+        {
+            row1.style.display = "flex"
+        }
+        else
+        {
+          row1.style.display = "none"
+        }
+        if(media.style.display == "flex")
+        {
+            media.style.display = "none"
+        }
+        else
+        {
+            media.style.display = "flex"
+        }
+        if(row.style.display == "flex")
+        {
+            row.style.display = "none"
+        }
+        if(navbar.style.display == "flex")
+        {
+            navbar.style.display = "none"
+        }
+        else
+        {
+            navbar.style.display = "flex"
+        }
+        vid.play();
+        vid.volume = 0.02;
+    }
+    
+    function showApex(){
+        if(row2.style.display == "none")
+        {
+            row2.style.display = "flex"
+        }
+        else
+        {
+          row2.style.display = "none"
+        }
+        if(media.style.display == "flex")
+        {
+            media.style.display = "none"
+        }
+        else
+        {
+            media.style.display = "flex"
+        }
+        if(row.style.display == "flex")
+        {
+            row.style.display = "none"
+        }
+        if(navbar.style.display == "flex")
+        {
+            navbar.style.display = "none"
+        }
+        else
+        {
+            navbar.style.display = "flex"
+        }
+        vid2.play();
+        vid2.volume = 0.02;
+    }
+
+    function showRocket(){
+        if(row3.style.display == "none")
+        {
+            row3.style.display = "flex"
+        }
+        else
+        {
+          row3.style.display = "none"
+        }
+        if(media.style.display == "flex")
+        {
+            media.style.display = "none"
+        }
+        else
+        {
+            media.style.display = "flex"
+        }
+        if(row.style.display == "flex")
+        {
+            row.style.display = "none"
+        }
+        if(navbar.style.display == "flex")
+        {
+            navbar.style.display = "none"
+        }
+        else
+        {
+            navbar.style.display = "flex"
+        }
+        vid3.play();
+        vid3.volume = 0.02;
+    }
+    function  goBackW(){
+        
+        if(row1.style.display == "flex")
+        {
+            row1.style.display = "none"
+        }
+        if(media.style.display == "none")
+        {
+            media.style.display = "flex"
+        }
+        if(navbar.style.display == "none")
+        {
+            navbar.style.display = "flex"
+        }
+        if(row.style.display == "none")
+        {
+            row.style.display = "flex"
+        }
+        vid.pause();
+        vid.currentTime = 0;
+       
+    }
+    function goBackA(){
+        if(row2.style.display == "flex")
+        {
+            row2.style.display = "none"
+        }
+        if(media.style.display == "none")
+        {
+            media.style.display = "flex"
+        }
+        if(navbar.style.display == "none")
+        {
+            navbar.style.display = "flex"
+        }
+        if(row.style.display == "none")
+        {
+            row.style.display = "flex"
+        }
+        vid2.pause();
+        vid2.currentTime = 0;
+
+    }
+    function goBackR(){
+        if(row3.style.display == "flex")
+        {
+            row3.style.display = "none"
+        }
+        if(media.style.display == "none")
+        {
+            media.style.display = "flex"
+        }
+        if(navbar.style.display == "none")
+        {
+            navbar.style.display = "flex"
+        }
+        if(row.style.display == "none")
+        {
+            row.style.display = "flex"
+        }
+        vid3.pause();
+        vid3.currentTime = 0;
+
+    }
+</script>
+  <script>
+
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.display = "inline-flex";
+
+      function myFunction(){
+
+          if(menuList.style.display == "none")
+          {
+              menuList.style.display = "inline-flex"
+          }
+          else
+          {
+            menuList.style.display = "none"
+          }
+      }
+  </script>
+  <script>
+      var e = 100
+     var myvid = document.getElementById('myvideo');
+var myvids = [
+  "witcher_Trim.mp4", 
+  "apex_Trim.mp4",
+  "rocket_Trim.mp4"
+  ];
+var activeVideo =0;
+
+myvid.addEventListener('ended', function(e) {
+  // update the new active video index
+  activeVideo = (++activeVideo) % myvids.length;
+
+  // update the video source and play
+  myvid.src = myvids[activeVideo];
+  myvid.play();
+});
+  </script>
+  <script>
+
+      fetch('https://steamcharts.com/app/292030/chart-data.json')
+
+      .then(Response => {
+          return Response.json();
+      })
+      .then( data => {
+
+      })
+      .catch( error => {
+
+      })
+  </script>
+</body>
+</html>
