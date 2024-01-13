@@ -22,7 +22,7 @@ header{
     justify-content: space-around;
     align-content:center ;
     width: 100%;
-    background: rgba(27, 25, 25, 0.75);
+    background: rgba(27, 25, 25, 0.77);
     height:80px;
 }
 nav{
@@ -57,6 +57,7 @@ nav li:hover{
 }
 .Me{
     padding-top: 12%;
+    padding-bottom: 1%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,12 +120,11 @@ nav li:hover{
     left: 50%;
     background: #1B1919;
     border-radius: 50px;
-    transition: 0.5s;
 }
 .AboutMe p{
-    margin-top: 35px;
-    margin-right: 20px;
-    margin-left: 30px;
+    text-indent: 6%;
+    text-align: justify;
+    padding: 9% 5% 5% 5%;
     font-size: 1.3vw;
     color: #fff;
 }
@@ -137,6 +137,7 @@ nav li:hover{
     position: relative;
     width: 100%;
     height: 45vw;
+    padding-top: 5%;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -250,4 +251,74 @@ nav li:hover{
     border-radius: 45px;
     transition: 0.5s;
     cursor: pointer;
+}
+@media only screen and (max-width:1200px){
+.Me{
+    padding-top: 14%;
+    padding-bottom: 0%;
+}
+}
+@media only screen and (max-width:870px){
+.Me{
+    padding-top: 18%;
+    }
+.name {
+    position: relative;
+    width: 26vw;
+    height: 5.2vw;
+    left: 10%;
+    top: 15px;
+    margin-bottom: 20px;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    }
+.name p{
+    font-size: 1.8vw;
+}
+.profile{
+    position: relative;
+    width: 26%;
+    left: 10%;
+    background: #1B1919;
+    border-radius: 45px;
+    transition: 0.5s;
+}
+.profile img{
+    position: relative;
+    left: 7.5%;
+    width: 22vw;
+    padding: 17px 0px 17px 0px;
+    border-radius: 45px;
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.AboutMe{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 52vw;
+    height: 33.2vw;
+    left: 42%;
+    background: #1B1919;
+    border-radius: 50px;
+}
+.AboutMe p{
+    font-size: 1.8vw;
+    padding: 8% 5% 5% 5%;
+}
+nav ul li a{
+    font-size: 1.2em;
+}
+.Skills{
+    padding-top: 8%;
+}
 }
