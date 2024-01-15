@@ -70,6 +70,7 @@
         </div>
     </div>
     <script>
+        const Desc = document.querySelector('.SkillsDescription');
         const ToSee = document.querySelector('#hoverToSee');
         const htmlImg = document.querySelector('.html');
         const htmlDesc = document.querySelector('#htmlDesc');
@@ -78,16 +79,30 @@
         const javascriptImg = document.querySelector('.javascript');
         const javascriptDesc = document.querySelector('#javascriptDesc')
 
-        cssImg.onclick = function(){
-            cssDesc.classList.toggle('active')
-            ToSee.classList.toggle('none')
-        }
+
         htmlImg.onclick = function(){
-            htmlDesc.classList.toggle('active')
+            htmlDesc.classList.add('active');
+            if (cssDesc.classList = 'active')
+            cssDesc.classList.remove('active');
+            if (javascriptDesc.classList = 'active')
+            javascriptDesc.classList.remove('active');
+        }
+        cssImg.onclick = function(){
+            cssDesc.classList.add('active');
+            if (htmlDesc.classList = 'active')
+            htmlDesc.classList.remove('active');
+            if (javascriptDesc.classList = 'active')
+            javascriptDesc.classList.remove('active');
         }
         javascriptImg.onclick = function(){
-            javascriptDesc.classList.toggle('active')
+            javascriptDesc.classList.add('active');
+            if (cssDesc.classList = 'active')
+            cssDesc.classList.remove('active');
+            if (htmlDesc.classList = 'active')
+            htmlDesc.classList.remove('active');
         }
+
+
     </script>
 </body>
 </html>

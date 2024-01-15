@@ -194,10 +194,14 @@ nav li:hover{
     display: flex;
     justify-content: center;
     width: 40vw;
-    height: 24.2vw;
+    height: 24vw;
     background: #1B1919;
     border-radius: 50px;
-    transition: 0.5s;
+    transition: 1s;
+}
+.SkillsDescription.active{
+    width: 40vw;
+    height: 24vw;
 }
 .SkillsDescription h1{
     position: absolute;
@@ -206,21 +210,38 @@ nav li:hover{
 }
 .SkillsDescription p{
     text-align: justify;
-    padding: 26% 2% 5% 2%;
+    padding: 23% 2% 5% 2%;
     font-size: 1.8vw;
     color: #fff;
+    transition: 1.2s;
+    display: none;
 }
 p#htmlDesc, p#cssDesc, p#javascriptDesc{
     display: none;
+    animation: fadeIn 6s;
+    font-size: 1.3vw;
 }
-.SkillsDescription p#cssDesc.active{
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+p#cssDesc.active{
     display: block;
 }
-.SkillsDescription p#htmlDesc.active{
+p#htmlDesc.active{
     display: block;
 }
-.SkillsDescription p#javascriptDesc.active{
+p#javascriptDesc.active{
     display: block;
+}
+p#htmlDesc.active.inactive{
+    display: none;
+}
+p#cssDesc.active.inactive{
+    display: none;
+}
+p#javascriptDesc.active.inactive{
+    display: none;
 }
 .Projects{
     position: relative;
