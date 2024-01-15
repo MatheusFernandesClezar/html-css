@@ -204,6 +204,24 @@ nav li:hover{
     bottom: 102%;
     font-size: 3vw;
 }
+.SkillsDescription p{
+    text-align: justify;
+    padding: 26% 2% 5% 2%;
+    font-size: 1.8vw;
+    color: #fff;
+}
+p#htmlDesc, p#cssDesc, p#javascriptDesc{
+    display: none;
+}
+.SkillsDescription p#cssDesc.active{
+    display: block;
+}
+.SkillsDescription p#htmlDesc.active{
+    display: block;
+}
+.SkillsDescription p#javascriptDesc.active{
+    display: block;
+}
 .Projects{
     position: relative;
     width: 100%;

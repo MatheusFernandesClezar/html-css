@@ -54,6 +54,10 @@
          </div>
          <div class="SkillsDescription">
             <h1>CAPACITAÇÕES</h1>
+            <p id="hoverToSee"> ◀ Passe o mouse sobre as imagens ao lado.</p>
+            <p id="htmlDesc"> HTML Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut minus dicta iure minima mollitia nihil eligendi tempora, explicabo debitis ut molestias nulla laborum. Reprehenderit repellendus ad tenetur dolorem aut dolores.</p>
+            <p id="cssDesc"> CSS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsam corporis, doloremque itaque, porro eius assumenda neque fugit a laboriosam in illum eligendi animi quod fuga magnam pariatur architecto unde?</p>
+            <p id="javascriptDesc"> JAVASCRIPT Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis necessitatibus, officia sapiente maiores facere incidunt a, quo illum voluptates exercitationem ex minima dolores, ullam fugit laborum repudiandae molestias libero?</p>
          </div>
         </div>
         <div class="Projects">
@@ -65,6 +69,25 @@
                 <div class="project3"></div>
         </div>
     </div>
-    
+    <script>
+        const ToSee = document.querySelector('#hoverToSee');
+        const htmlImg = document.querySelector('.html');
+        const htmlDesc = document.querySelector('#htmlDesc');
+        const cssImg = document.querySelector('.css');
+        const cssDesc = document.querySelector('#cssDesc');
+        const javascriptImg = document.querySelector('.javascript');
+        const javascriptDesc = document.querySelector('#javascriptDesc')
+
+        cssImg.onclick = function(){
+            cssDesc.classList.toggle('active')
+            ToSee.classList.toggle('none')
+        }
+        htmlImg.onclick = function(){
+            htmlDesc.classList.toggle('active')
+        }
+        javascriptImg.onclick = function(){
+            javascriptDesc.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
