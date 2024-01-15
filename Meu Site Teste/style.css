@@ -218,30 +218,15 @@ nav li:hover{
 }
 p#htmlDesc, p#cssDesc, p#javascriptDesc{
     display: none;
-    animation: fadeIn 6s;
+    animation: fadeIn 5s;
     font-size: 1.3vw;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-p#cssDesc.active{
+  p#htmlDesc.active, p#cssDesc.active, p#javascriptDesc.active{
     display: block;
-}
-p#htmlDesc.active{
-    display: block;
-}
-p#javascriptDesc.active{
-    display: block;
-}
-p#htmlDesc.active.inactive{
-    display: none;
-}
-p#cssDesc.active.inactive{
-    display: none;
-}
-p#javascriptDesc.active.inactive{
-    display: none;
 }
 .Projects{
     position: relative;
