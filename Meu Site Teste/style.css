@@ -210,16 +210,22 @@ nav li:hover{
 }
 .SkillsDescription p{
     text-align: justify;
-    padding: 23% 2% 5% 2%;
     font-size: 1.8vw;
     color: #fff;
     transition: 1.2s;
     display: none;
 }
+p#hoverToSee.active{
+    display: none;
+}
+p#hoverToSee{
+    display: block;
+    padding: 27% 2% 5% 2%;
+}
 p#htmlDesc, p#cssDesc, p#javascriptDesc{
     display: none;
     animation: fadeIn 5s;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -227,6 +233,9 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
   }
   p#htmlDesc.active, p#cssDesc.active, p#javascriptDesc.active{
     display: block;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .Projects{
     position: relative;
