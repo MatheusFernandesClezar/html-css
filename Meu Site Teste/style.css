@@ -256,6 +256,13 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
     transition: 0.5s;
     cursor: pointer;
 }
+.project1 img{
+    position: relative;
+    left: 50px;
+    top: 80px;
+    width: 25vw;
+    border-radius: 10px;
+}
 .project2{
     position: relative;
     width: 30vw;
