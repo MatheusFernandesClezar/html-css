@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
-
+html{
+    height: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,31 +10,43 @@
 }
 body {
 
+    height: 100%;
     background-color: #0F0E0E;
-    font-family: "inder", sans-serif ;
+    font-family: "bebas", sans-serif ;
 }
 
 header {
 
     display: flex;
     height: 10vh;
-    background:linear-gradient(to bottom, #9C0808, transparent);
+    background: linear-gradient(to bottom, #9C0808, transparent);
+    align-items: center;
+    flex-direction: row;
+
 }
 .left-header{
 
     display: flex;
-    width: 50vw;
-    align-items: center;
+    width: 80%;
+    justify-content: flex-start;
+
 }
 .left-header>img{
-
-
     height: 6vh;
-    margin: 0px 0px 0px 108px;
+    margin: 0px 0px 0px 12%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.left-header>img:hover{
+    transform: scale(1.1);
+}
+nav{
+    width: 100%;
 }
 ul{
 
-    display: flex;
+    width: 100%;
     list-style: none;
     margin: 0px 0px 0px 108px;
 
@@ -45,24 +59,26 @@ li{
 }
 
 li>a{
-
+    float: left;
     text-decoration: none;
+    font-size: large;
     color: rgba(255, 255, 255, 0.877);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    margin: 0 60px 0 0px;
+    border-radius: 3px;
+    transition: 0.75s;
 }
 li>a:hover{
-
+    
     background-color: black;
-    transition: 0.75s;
-
 }
 .right-header{
 
     display: flex;
-    width: 50vw;
-    align-items: center;
+    width: 20%;
+    float: right;
     justify-content: flex-end;
+    align-items: center;
 }
 .right-header>#user{
 
@@ -148,8 +164,30 @@ width: 250px;
     outline: none;
     color: #0F0E0E;
     font-size: 16px;
-    font-family: "inder", sans-serif ;
-    padding: 10px 0;
+    font-family: "bebas", sans-serif ;
+    padding: 17px 0;
 
+}
+.firstRow{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#one1, #one2, #one3{
+    background-color: rgba(255, 255, 255, 0.877);
+    filter: drop-shadow(0px 0px 2px white);
+    width: 25%;
+    height: 100%;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#one1:hover, #one2:hover, #one3:hover{
+    transform: scale(1.05);
 }
 
