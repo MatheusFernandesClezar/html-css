@@ -260,9 +260,9 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
     cursor: pointer;
 }
 .project1 img{
-    position: relative;
-    left: 50px;
-    top: 80px;
+    display: block;
+    margin: auto;
+    margin-top: 14%;
     width: 25vw;
     border-radius: 10px;
 }
@@ -276,9 +276,9 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
     cursor: pointer;
 }
 .project2 img{
-    position: relative;
-    left: 50px;
-    top: 80px;
+    display: block;
+    margin: auto;
+    margin-top: 14%;
     width: 25vw;
     border-radius: 10px;
 }
