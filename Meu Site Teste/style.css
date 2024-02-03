@@ -68,29 +68,29 @@ nav li:hover{
 .profile{
     position: relative;
     width: 21%;
-    left: 15%;
+    left: 16%;
     background: #1B1919;
-    border-radius: 45px;
+    border-radius: 90px;
     transition: 0.5s;
 }
 .profile:hover{
     transform: scale(1.02);
 }
 .profile img{
-    position: relative;
-    left: 7.5%;
+    display: block;
+    margin: auto;
     width: 18vw;
     padding: 17px 0px 17px 0px;
-    border-radius: 45px;
+    border-radius: 90px;
     transition: 0.5s;
-    filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(0px 0px 2px white);
 }
 
 .name{
     position: relative;
     width: 22vw;
     height: 2.2vw;
-    left: 14.5%;
+    left: 15.5%;
     top: 15px;
     margin-bottom: 20px;
     background: #1B1919;
@@ -340,8 +340,6 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
     transition: 0.5s;
 }
 .profile img{
-    position: relative;
-    left: 7.5%;
     width: 22vw;
     padding: 17px 0px 17px 0px;
     border-radius: 45px;
@@ -370,5 +368,8 @@ nav ul li a{
 }
 .Skills{
     padding-top: 8%;
+}
+.html, .css, .javascript{
+    margin: 20px;
 }
 }
