@@ -11,15 +11,15 @@ html{
 body {
 
     height: 100%;
-    background-color: #0F0E0E;
+    background-color: #000000f2;
     font-family: "bebas", sans-serif ;
 }
 
 header {
 
     display: flex;
-    height: 10vh;
-    background: linear-gradient(to bottom, #9C0808, transparent);
+    height: 9vh;
+    background: linear-gradient(to bottom, #9C0808, #5c0000);
     align-items: center;
     flex-direction: row;
 
@@ -181,26 +181,45 @@ width: 250px;
     justify-content: space-evenly;
 }
 #firstRowP{
-    top: 11%;
-    left: 3%;
+    top: 12%;
+    left: 4%;
     width: 30%;
     position: relative;
     font-size: 2em;
     color: white;
     filter: drop-shadow(0px 0px 1px white);
 }
-#one1, #one2, #one3, #one4{
+#one1, #one2, #one3, #one4, #two1, #two2, #two3, #two4{
     background-color: rgba(255, 255, 255, 0.877);
     background-image: url(img/placeholder.png);
     filter: drop-shadow(0px 0px 2px white);
-    width: 22%;
-    height: 90%;
+    width: 20%;
+    height: 80%;
     border-radius: 3px;
     transition: 0.5s;
     cursor: pointer;
 }
-#one1:hover, #one2:hover, #one3:hover, #one4:hover{
+#one1:hover, #one2:hover, #one3:hover, #one4:hover, #two1:hover, #two2:hover, #two3:hover, #two4:hover{
     transform: scale(1.05);
+}
+.secondRow{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    margin-top: 2%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#secondRowP{
+    top: 5%;
+    left: 4%;
+    width: 30%;
+    position: relative;
+    font-size: 2em;
+    color: white;
+    filter: drop-shadow(0px 0px 1px white);
 }
 
 
