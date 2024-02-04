@@ -180,6 +180,23 @@ width: 250px;
     align-items: center;
     justify-content: space-evenly;
 }
+button.btnPrevious{
+    background-image: url(img/anterior.png);
+    z-index: 9;
+    height: 50px;
+    width: 25px;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+button.btnNext{
+    background-image: url(img/proximo.png);
+    z-index: 9;
+    width: 25px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
 #firstRowP{
     top: 12%;
     left: 4%;

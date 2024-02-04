@@ -49,17 +49,21 @@
     </header>
     <p id="firstRowP">Filmes em Alta</p>
     <div class="firstRow">
+        <button class="btnPrevious"></button>
         <div id="one1"></div>
         <div id="one2"></div>
         <div id="one3"></div>
         <div id="one4"></div>
+        <button class="btnNext"></button>
     </div>
     <p id="secondRowP">Series em Alta</p>
     <div class="secondRow">
+        <button class="btnPrevious"></button>
         <div id="two1"></div>
         <div id="two2"></div>
         <div id="two3"></div>
         <div id="two4"></div>
+        <button class="btnNext"></button>
     </div>
     <script>
         const icon = document.querySelector('.icon');
@@ -68,6 +72,12 @@
             search.classList.toggle('active')
         }
     </script>
+    <script>
+
+    $('.firstRow').slick();
+    
+    </script>
+    
 
 </body>
 </html>
