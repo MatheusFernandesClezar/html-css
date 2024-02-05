@@ -179,6 +179,7 @@ width: 250px;
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 button.btnPrevious{
     background-image: url(img/anterior.png);
@@ -188,6 +189,7 @@ button.btnPrevious{
     background-color: transparent;
     border: none;
     font-size: 0;
+    cursor: pointer;
 }
 button.btnNext{
     background-image: url(img/proximo.png);
@@ -196,19 +198,23 @@ button.btnNext{
     height: 50px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+.btnNext:hover, .btnPrevious:hover{
+    transform: scale(1.2);
 }
 #firstRowP{
     top: 12%;
-    left: 4%;
+    left: 6%;
     width: 30%;
     position: relative;
     font-size: 2em;
     color: white;
     filter: drop-shadow(0px 0px 1px white);
 }
-#one1, #one2, #one3, #one4, #two1, #two2, #two3, #two4{
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
     background-color: rgba(255, 255, 255, 0.877);
-    background-image: url(img/placeholder.png);
+    display: block;
     filter: drop-shadow(0px 0px 2px white);
     width: 20%;
     height: 80%;
@@ -216,7 +222,16 @@ button.btnNext{
     transition: 0.5s;
     cursor: pointer;
 }
-#one1:hover, #one2:hover, #one3:hover, #one4:hover, #two1:hover, #two2:hover, #two3:hover, #two4:hover{
+#one5, #one6, #one7, #one8{
+    display: none;
+}
+#one1.inactive, #one2.inactive, #one3.inactive, #one4.inactive, #one5.inactive, #one6.inactive, #one7.inactive, #one8.inactive{
+    display: none;
+}
+#one1.active, #one2.active, #one3.active, #one4.active, #one5.active, #one6.active, #one7.active, #one8.active {
+    display: block;
+}
+#one1:hover, #one2:hover, #one3:hover, #one4:hover,#one5:hover, #one6:hover, #one7:hover, #one8:hover, #two1:hover, #two2:hover, #two3:hover, #two4:hover{
     transform: scale(1.05);
 }
 .secondRow{
@@ -231,7 +246,7 @@ button.btnNext{
 }
 #secondRowP{
     top: 5%;
-    left: 4%;
+    left: 6%;
     width: 30%;
     position: relative;
     font-size: 2em;

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Mathflix</title>
 </head>
 
@@ -49,20 +51,24 @@
     </header>
     <p id="firstRowP">Filmes em Alta</p>
     <div class="firstRow">
-        <button class="btnPrevious"></button>
-        <div id="one1"></div>
-        <div id="one2"></div>
-        <div id="one3"></div>
-        <div id="one4"></div>
-        <button class="btnNext"></button>
+        <button class="btnPrevious" onclick="previous()"></button>
+        <img src="img/cyberpunk.png"  id="one1">
+        <img src="img/gameofthrones.jpg"  id="one2">
+        <img src="img/mafia.jpg"  id="one3">
+        <img src="img/madmax.jpg"  id="one4">
+        <img src="img/skyrim.jpg"  id="one5">
+        <img src="img/battlefield.jpg"  id="one6">
+        <img src="img/witcher.jpg"  id="one7">
+        <img src="img/starfield.jpg"  id="one8">
+        <button class="btnNext" onclick="next()"></button>
     </div>
     <p id="secondRowP">Series em Alta</p>
     <div class="secondRow">
         <button class="btnPrevious"></button>
-        <div id="two1"></div>
-        <div id="two2"></div>
-        <div id="two3"></div>
-        <div id="two4"></div>
+        <img src="img/metroexodus.png" id="two1">
+        <img src="img/darksouls.png" id="two2">
+        <img src="img/dragonage.jpg" id="two3">
+        <img src="img/skyrim2.jpg" id="two4">
         <button class="btnNext"></button>
     </div>
     <script>
@@ -74,8 +80,47 @@
     </script>
     <script>
 
-    $('.firstRow').slick();
-    
+        var one1 = document.querySelector('#one1')
+        var one2 = document.querySelector('#one2')
+        var one3 = document.querySelector('#one3')
+        var one4 = document.querySelector('#one4')
+        var one5 = document.querySelector('#one5')
+        var one6 = document.querySelector('#one6')
+        var one7 = document.querySelector('#one7')
+        var one8 = document.querySelector('#one8')
+        const btnNext = document.querySelector('.btnNext')
+        const btnPrevious = document.querySelector('.btnPrevious')
+
+
+        btnNext.onclick = function(){
+            if (one1.classList = 'active')
+            {
+                one5.classList = 'active'
+                one6.classList = 'active'
+                one7.classList = 'active'
+                one8.classList = 'active'
+            }
+            one1.classList = 'inactive'
+            one2.classList = 'inactive'
+            one3.classList = 'inactive'
+            one4.classList = 'inactive'
+        }
+        btnPrevious.onclick = function(){
+            if (one5.classList = 'active')
+            {
+                one5.classList = 'inactive'
+                one6.classList = 'inactive'
+                one7.classList = 'inactive'
+                one8.classList = 'inactive'
+            }
+            one1.classList = 'active'
+            one2.classList = 'active'
+            one3.classList = 'active'
+            one4.classList = 'active'
+        }
+    </script>
+
+    <script>
     </script>
     
 
