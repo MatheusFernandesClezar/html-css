@@ -393,4 +393,24 @@ nav ul li{
 nav ul li a{
     font-size: 0.9em;
 }
+.AboutMe{
+    width: 52vw;
+    height: 33.2vw;
+    border-radius: 20px;
+}
+.AboutMe p{
+    font-size: 2vw;
+    padding: 4% 5% 5% 5%;
+}
+.SkillsDescription{
+    width: 48vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+p#javascriptDesc, p#cssDesc, p#htmlDesc{
+    font-size: 2.2em;
+}
+.project1, .project2, .project3{
+    border-radius: 20px;
+}
 }
