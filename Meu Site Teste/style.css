@@ -6,7 +6,11 @@
     font-family: "Inder", Sans-serif;
 }
 html {
+    height: 100%;
     scroll-behavior: smooth;
+  }
+  body{
+    height: 100%;
   }
 .Container{
     height: 100%;
@@ -371,5 +375,22 @@ nav ul li a{
 }
 .html, .css, .javascript{
     margin: 20px;
+}
+}
+@media only screen and (max-width:680px){
+.Me{
+    padding-top: 22%;
+}
+.logo{
+    width: 150px;
+}
+.logo svg{
+    width: 150px;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    font-size: 0.9em;
 }
 }
