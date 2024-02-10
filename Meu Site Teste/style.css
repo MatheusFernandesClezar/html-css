@@ -429,6 +429,16 @@ p#javascriptDesc, p#cssDesc, p#htmlDesc{
 }
 }
 @media only screen and (max-width:490px){
+    .logo{
+        width: 130px;
+    }
+    .logo svg{
+        width: 140px;
+    }
+    nav ul li{
+        margin-right: 15px;
+        font-size: 3.5vw;
+    }
     .Me{
         padding-top: 25%;
     }
