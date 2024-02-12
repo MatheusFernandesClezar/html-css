@@ -297,10 +297,49 @@ li>a{
 #firstRowP, #secondRowP{
     font-size: 1.5em;
 }
+#secondRowP{
+    margin-top: -8%;
+}
 .secondRow{
     margin-top: 0%;
 }
 .firstRow{
     margin-top: -1%;
+}
+}
+@media only screen and (max-width:800px){
+nav{
+    position: relative;
+    left: -35px;
+}
+li>a{
+    margin-right: 0px;
+}
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 30%;
+}
+#secondRowP{
+    margin-top: -12%;
+}
+}
+@media only screen and (max-width:590px){
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 25%;
+}
+#firstRowP, #secondRowP{
+    font-size: 1.3em;
+}
+#secondRowP{
+    margin-top: -18%;
+}
+.left-header>img{
+    margin: 0px 0px 0px 7%;
+}
+nav{
+    left: -30px;
+}
+li>a{
+    font-size: medium;
+    padding: 5px;
 }
 }
