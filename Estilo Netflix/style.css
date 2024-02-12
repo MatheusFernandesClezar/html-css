@@ -253,5 +253,11 @@ button.btnNext{
     color: white;
     filter: drop-shadow(0px 0px 1px white);
 }
-
-
+@media only screen and (max-width:1500px){
+    #one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+        height: 65%;
+}
+#firstRowP, #secondRowP{
+    top: 7%;
+}
+}
