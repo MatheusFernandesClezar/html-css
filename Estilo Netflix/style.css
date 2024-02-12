@@ -253,11 +253,54 @@ button.btnNext{
     color: white;
     filter: drop-shadow(0px 0px 1px white);
 }
+@media only screen and (max-width:1600px){#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 70%; 
+}
+}
 @media only screen and (max-width:1500px){
-    #one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
-        height: 65%;
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 65%;
+}
+.firstRow{
+    margin-top: 2%;
 }
 #firstRowP, #secondRowP{
     top: 7%;
+}
+}
+@media only screen and (max-width:1250px){
+.search{
+    display: none;
+}
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 55%;
+}
+}
+@media only screen and (max-width:1000px){
+.left-header>img{
+    margin: 0px 0px 0px 9%;
+}
+li>a{
+    margin-right: 30px;
+}
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 45%;
+}
+#firstRowP, #secondRowP{
+    font-size: 1.8em;
+}
+}
+@media only screen and (max-width:1000px){
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #two1, #two2, #two3, #two4{
+    height: 35%;
+}
+#firstRowP, #secondRowP{
+    font-size: 1.5em;
+}
+.secondRow{
+    margin-top: 0%;
+}
+.firstRow{
+    margin-top: -1%;
 }
 }
