@@ -306,6 +306,13 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
     transition: 0.5s;
     cursor: pointer;
 }
+.project3 img{
+    display: block;
+    margin: auto;
+    margin-top: 14%;
+    width: 25vw;
+    border-radius: 10px;
+}
 @media only screen and (max-width:1200px){
 .Me{
     padding-top: 14%;
