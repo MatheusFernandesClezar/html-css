@@ -39,7 +39,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-family: "Inder", Sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ffff;
     cursor: pointer;
 }
@@ -48,21 +48,37 @@ li>a{
     cursor:pointer;
     text-decoration: none;
 }
+#Mais{
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 0.2rem;
+    background-image: url(img/Section\ 1.png);
+    margin: 0px 10% 0 0%;
+    cursor: pointer;
+}
+#Mais:hover{
+    background-image: url(img/Section\ 2.png);
+}
 .search{
     display: flex;
     width: 19%;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+}
+div.input{
+    width: 90%;
 }
 #Buscar{
     height: 25px;
-    width: 90%;
-    padding: 5px 10px;
+    width: 95%;
+    padding: 5px 2%;
     font-size: 0.9rem;
     color: #ffffff;
     background-color: #18181b;
     border-color: transparent;
-    border-radius: 0.6rem 0rem 0rem 0.6rem;;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
     box-shadow: inset 0 0 0 1px hsl(240deg 8% 88% / 40%);
     outline: none;
 }
