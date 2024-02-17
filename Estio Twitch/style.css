@@ -5,6 +5,14 @@
     padding: 0;
     font-family: "Inter", Arial, sans-serif;
 }
+:root{
+    --cor01: #18181b;
+    --cor02: #b785f2;
+    --cor03: #ffffff;
+    --cor04: #2f2e35;
+    --cor05: #0e0e10;
+    --cor06: #8000ff;
+}
 body{
     background-color: #0e0e10;
 }
@@ -25,6 +33,10 @@ header img#Logo{
     margin: 0px 2% 0px 2%;
     height: 40px;
     cursor: pointer;
+    transition: 0.5s;
+}
+header img#Logo:hover{
+    transform: scale(1.1);
 }
 nav{
     position: relative;
@@ -98,9 +110,72 @@ header button{
 header button:hover{
     background-image: url(img/Lupa2.png);
 }
-:root{
-    --cor01: #18181b;
-    --cor02: #b785f2;
-    --cor03: #ffffff;
-    --cor04: #2f2e35;
+#right-header{
+    width: 41.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#profile{
+    display: block;
+    margin-left: 1%;
+    width: 36px;
+    height: 36px;
+    background-image: url(img/profile.png);
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+#profile:hover{
+    background-image: url(img/profile2.png);
+}
+#msg{
+    display: block;
+    margin: 0 0.5%;
+    width: 36px;
+    height: 36px;
+    background-image: url(img/msg1.png);
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+#msg:hover{
+    background-image: url(img/msg2.png);
+}
+#ads{
+    display: flex;
+    margin: 0 0.5%;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    padding: 6px 8px 6px 6px;
+    font-size: 0.85rem;
+    border-radius: 0.2rem;
+    background-color: #2f2e35;
+}
+#ads img{
+    margin-right: 10px;
+}
+#chest{
+    display: block;
+    margin: 0 0.5%;
+    width: 36px;
+    height: 36px;
+    background-image: url(img/chest.png);
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+#chest:hover{
+    background-image: url(img/chest2.png);
+}
+#coroa{
+    display: block;
+    margin: 0 0.5%;
+    width: 36px;
+    height: 36px;
+    background-image: url(img/coroa.png);
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+#coroa:hover{
+    background-image: url(img/coroa2.png);
 }
