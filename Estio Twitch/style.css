@@ -23,6 +23,7 @@ header{
     position: fixed;
     z-index: 100;
     background-color: #18181b;
+    box-shadow: inset 0px -1px 1px 1px #040404;
     align-items: center;
     flex-direction: row;
 
@@ -65,8 +66,8 @@ li>a:hover{
 }
 #Mais{
     display: block;
-    width: 41px;
-    height: 41px;
+    width: 33px;
+    height: 33px;
     border-radius: 0.2rem;
     background-image: url(img/Section\ 1.png);
     margin: 0px 10% 0 0%;
@@ -182,4 +183,12 @@ header button:hover{
 }
 #coroa:hover{
     background-image: url(img/coroa2.png);
+}
+#left-header{
+    display: flex;
+    position: fixed;
+    top: 60px;
+    height: 850px;
+    width: 240px;
+    background-color: #18181b;
 }
