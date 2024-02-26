@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+html{
+    height: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +17,7 @@
     --cor06: #8000ff;
 }
 body{
+    height: 100%;
     background-color: #0e0e10;
 }
 header{
@@ -160,6 +164,9 @@ header button:hover{
 #ads img{
     margin-right: 10px;
 }
+#ads:hover{
+    box-shadow: inset 0 0 0 1px hsl(240deg 8% 88% / 40%);
+}
 #chest{
     display: block;
     margin: 0 0.5%;
@@ -186,9 +193,38 @@ header button:hover{
 }
 #left-header{
     display: flex;
+    flex-direction: column;
     position: fixed;
     top: 60px;
-    height: 850px;
+    height: 100%;
     width: 240px;
     background-color: #18181b;
+}
+#left-header h1{
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    padding: 5px 5px 5px 10px;
+}
+#left-header p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 5px 5px 10px;
+}
+#followed1{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+.followed2{
+    display: flex;
+    cursor: pointer;
+    height: 30px;
+    flex-direction: row;
+    padding: 5px 5px 5px 10px;
+}
+.followed2:hover{
+    box-shadow: inset 0 0 0 1px hsl(240deg 8% 88% / 40%);
 }
