@@ -315,7 +315,7 @@ header button:hover{
     position: relative;
     left: 240px;
     height: 100%;
-    width: 70%;
+    width: 69.5%;
 }
 #videoPlayer{
     display: flex;
