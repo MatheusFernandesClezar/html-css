@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: black;
+    height: 95.9%;
+    margin: 0;
+    padding: 1%;
+}
+#main-container{
+    height: 100%;
+    background-color: white;
+}
+#left-container{
+    padding: 15px;
+    width: 80px;
+    height: 96.5%;
+    box-shadow: 0 0 0 5px hsl(0deg 0% 0%);
+}
+#left-container button{
+    height: 80px;
+    font-size: 12px;
+    border-width: 4px;
+    border-color: black;
+    padding: 2px;
+}
+#buttons{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
