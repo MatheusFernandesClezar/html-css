@@ -228,7 +228,7 @@ header button:hover{
     position: relative;
     z-index: 1000;
     height: 100%;
-    width: 15rem;
+    width: 240px;
     background-color: #18181b;
 }
 #lhh1 h1:hover, #lhp p:hover{
@@ -331,6 +331,9 @@ header button:hover{
     font-size: 14px;
     padding: 10px 5px 5px 10px;
 }
+#channelContainer{
+    width: 80%;
+}
 #videoContainer{
     display: flex;
     flex-direction: row;
@@ -347,16 +350,63 @@ header button:hover{
     margin: auto;
 }
 #videoPlayer video{
-    width: 1340px;
+    width: 100%;
 }
 #fix{
     position: relative;
+    width: 88%;
 }
 #chat{
-    position: sticky;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 340px;
     height: 100%;
+    align-items: center;
     background-color: #18181b;
+}
+#chat h1{
+    font-size: medium;
+    color: white;
+}
+#top-chatName{
+    display: flex;
+    height: 50px;
+    padding: 0 10px;
+    flex-direction: row;
+    align-items: center;
+}
+#ocultar, #comunidade{
+    width: 30px;
+    height: 30px;
+}
+#chat-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+#chat-donations{
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+#chat-messages{
+    display: flex;
+    width: 100%;
+    height: 85%;
+}
+#chat-message{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#chat-message input{
+    height: 19.5px;
+    padding: 10px 85px 10px 38px;
+    border: none;
+    color: white;
+    background-color: #2f2e35;
 }
