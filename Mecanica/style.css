@@ -5,7 +5,7 @@ html{
     height: 100%;
 }
 body{
-    background-color: black;
+    background-color: #000000c7;
     height: 95.9%;
     margin: 0;
     padding: 1%;
@@ -18,7 +18,7 @@ body{
     padding: 15px;
     width: 80px;
     height: 96.5%;
-    box-shadow: 0 0 0 5px hsl(0deg 0% 0%);
+    box-shadow: #333 0px 0px 0px 5px;
 }
 #left-container button{
     height: 80px;
