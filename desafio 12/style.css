@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+header{
+    padding: 35px;
+    background-color: black;
+}
+header h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+header a{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.normal{
+    padding-top: 20px;
+    background-color: gray;
+}
+.imagem{
+    padding-top: 20px;
+    background-color: rgb(33, 33, 33);
+}
+.normal p{
+    line-height: 2em;
+    padding: 35px;
+}
+.imagem p{
+    line-height: 2em;
+    padding: 35px;
+}
