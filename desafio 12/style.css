@@ -20,19 +20,35 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: white;
+}
 .normal{
-    padding-top: 20px;
+    padding: 35px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     background-color: gray;
 }
 .imagem{
-    padding-top: 20px;
+    padding: 35px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     background-color: rgb(33, 33, 33);
 }
 .normal p{
     line-height: 2em;
-    padding: 35px;
 }
 .imagem p{
+    width: 1100px;
+    background-color: white;
     line-height: 2em;
-    padding: 35px;
 }
