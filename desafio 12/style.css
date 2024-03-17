@@ -1,8 +1,16 @@
 *{
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
 }
 header{
-    padding: 35px;
+    padding: 43px;
     background-color: black;
 }
 header h1{
@@ -11,9 +19,16 @@ header h1{
     justify-content: center;
     background-color: black;
     color: white;
+    font-variant: small-caps;
+}
+header p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: larger;
 }
 header a{
-    padding-left: 10px;
+    padding-left: 5px;
     color: white;
     text-decoration: none;
 }
@@ -34,21 +49,23 @@ footer a{
 }
 .normal{
     padding: 35px;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    background-color: gray;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
 }
 .imagem{
     padding: 35px;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    background-color: rgb(33, 33, 33);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(72, 72, 72);
 }
 .normal p{
+    width: 200px;
     line-height: 2em;
 }
 .imagem p{
-    width: 1100px;
-    background-color: white;
+    width: 200px;
+    color: white;
+    background-color: rgb(44, 44, 44);
     line-height: 2em;
 }
