@@ -327,7 +327,7 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
     position: relative;
     width: 26vw;
     height: 5.2vw;
-    left: 10%;
+    left: 5%;
     top: 15px;
     margin-bottom: 20px;
     background: #1B1919;
@@ -345,7 +345,7 @@ p#htmlDesc, p#cssDesc, p#javascriptDesc{
 .profile{
     position: relative;
     width: 26%;
-    left: 10%;
+    left: 5%;
     background: #1B1919;
     border-radius: 45px;
     transition: 0.5s;
@@ -412,24 +412,32 @@ nav ul li a{
     font-size: 0.9em;
 }
 .AboutMe{
-    width: 52vw;
-    height: 33.2vw;
+    width: 57vw;
+    height: 44.2vw;
     border-radius: 20px;
+    left: 37%;
 }
 .AboutMe p{
-    font-size: 2vw;
+    font-size: 2.4vw;
     padding: 4% 5% 5% 5%;
 }
+.HtmlCssJava{
+    width: 38%;
+}
 .SkillsDescription{
-    width: 48vw;
-    height: 30vw;
+    width: 56vw;
+    height: 31vw;
     border-radius: 20px;
 }
-p#javascriptDesc, p#cssDesc, p#htmlDesc{
-    font-size: 2.3vw;
+p#javascriptDesc, p#cssDesc{
+    font-size: 2.18vw;
+}
+p#htmlDesc{
+    font-size: 2.1vw;
 }
 .html, .css, .javascript{
     border-radius: 15px;
+    margin: 10px;
 }
 .project1, .project2, .project3{
     border-radius: 20px;
